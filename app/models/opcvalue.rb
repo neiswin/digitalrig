@@ -1,0 +1,2 @@
+class Opcvalue < ApplicationRecord
+end
