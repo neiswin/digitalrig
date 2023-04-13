@@ -11,6 +11,11 @@
   </head>
 
   <body>
+  <%= render 'shared/menu' %> 
+
+  <% flash.each do |key , value| %>
+    <%= tag.div value, class: "alert alert-success #{key}", role: 'alert' %>
+  <% end %>
 
   <div class="container p-3">  
     <%= yield %>

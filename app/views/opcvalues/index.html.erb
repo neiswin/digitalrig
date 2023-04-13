@@ -1,0 +1,10 @@
+
+<div class="card border-primary">
+  <div class="card-body">
+    <h4 class="card-title"><%= @value %></h4>
+    <p class="card-text"> <%= link_to "save to db", opcvalues_path,  'data-turbo-method': :post,  data: { confirm: 'Are you sure?'}, class: "btn btn-success"  %>  </p>
+  </div>
+</div>
+
+<%= line_chart @opcvalues %>
+
